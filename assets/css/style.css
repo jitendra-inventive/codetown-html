@@ -1634,6 +1634,7 @@ a.logo img {
 .social-links a:hover {
     color: #e53324;
 }
+/* Responsive css code */
 @media(max-width:480px){
 #footer .footer-top .footer-links {
     margin-bottom: 30px;
