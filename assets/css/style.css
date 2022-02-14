@@ -1738,7 +1738,18 @@ p.services_title {
     border-bottom: 1px solid #dee2e6;
     justify-content: center;
 }
-
+.services_tabs .nav-link.active {
+    border: 0 !important;
+}
+.services .services_tabs .nav-link:after {
+    border-bottom: 2px solid #dd3425;
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    transition: 0.5s ease-in-out;
+}
 .services .services_tabs .nav-link:hover, .services .services_tabs .nav-link:focus, .services .services_tabs .nav-link:focus-visible{
   border: 0 !important;
   color: #333 !important;
