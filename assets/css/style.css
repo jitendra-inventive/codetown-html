@@ -1214,8 +1214,8 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #e84941;
+  border-bottom: 3px solid #e84941;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1331,10 +1331,10 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .contact .php-email-form label {
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
@@ -1360,7 +1360,7 @@ section {
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #343434;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1691,4 +1691,91 @@ button.apply_btn {
 button.apply_btn:hover {
     background: #e63627;
     color: #fff;
+}
+i.bi.contact_iconn {
+    font-size: 24px;
+    border: 2px solid #777;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: inline-grid;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #777;
+}
+.services ul#portfolio-flters li {
+    list-style: none;
+    padding: 20px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+.services ul#portfolio-flters {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* services page  */
+
+h4.services_img {
+    text-align: center;
+}
+h4.services_img img {
+    width: 100%;
+    max-width: 60px;
+}
+p.services_title {
+    text-align: center;
+    font-weight: 600;
+}
+.services-info {
+    padding: 50px 0 0;
+    display: inline-block;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    justify-content: center;
+}
+
+.services .services_tabs .nav-link:hover, .services .services_tabs .nav-link:focus, .services .services_tabs .nav-link:focus-visible{
+  border: 0 !important;
+  color: #333 !important;
+  outline: 0 !important;
+}
+.services_tabs .nav-link.active:after {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.services_tabs .nav-link{
+  list-style: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  transition: 0.4s ease-in-out;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.services-item {
+  text-align: center;
+}
+@media(max-width: 580px){
+.services ul#portfolio-flters {
+    display: inline-block !important;
+    padding-left: 0;
+}
+.services ul#portfolio-flters li {
+    padding: 10px 10px;
+    width: 49%;
+    display: inline-block;
+}
+.services-item {
+    width: 50% !important;
+}
+.services-info {
+    padding: 10px 0 !important;
+}
 }

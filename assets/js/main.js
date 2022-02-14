@@ -143,15 +143,16 @@
     }
   }, true);
   on('click', '.apply_btn', function(e) {
-    e.preventDefault();
+    //e.preventDefault();
     let $hrDetail = select('.hiring_details');
     let $applyForm = select('.appy_form_section');
-    let $applyPosition = this.getAttribute('data-apply');
+    var $applyPosition = this.getAttribute('data-apply');
+    var $position = select('#position');
     
     $hrDetail.classList.add('hide');
     $applyForm.classList.add('show');
-    select('#position').setAttribute('value', $applyPosition);
-  })
+    $position.setAttribute('value', $applyPosition);
+  }, true)
   /**
    * Scroll with ofset on page load with hash links in the url
    */
