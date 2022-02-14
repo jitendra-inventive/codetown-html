@@ -1352,7 +1352,7 @@ section {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #47b2e4;
+  background: #e63627;
   border: 0;
   padding: 12px 34px;
   color: #fff;
@@ -1668,4 +1668,27 @@ h2.opening_title {
     text-align: center;
     font-size: 25px;
     color: #f3eeee;
+}
+.appy_form_section{
+  display: none;
+}
+.appy_form_section.show {
+    display: block;
+}
+.hiring_details.hide {
+    display: none;
+}
+button.apply_btn {
+    background: #303030;
+    color: #fff;
+    display: inline-block;
+    padding: 0px 30px;
+    height: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+    outline: 0;
+}
+button.apply_btn:hover {
+    background: #e63627;
+    color: #fff;
 }

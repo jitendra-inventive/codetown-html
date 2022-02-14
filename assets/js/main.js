@@ -141,8 +141,17 @@
       }
       scrollto(this.hash)
     }
-  }, true)
-
+  }, true);
+  on('click', '.apply_btn', function(e) {
+    e.preventDefault();
+    let $hrDetail = select('.hiring_details');
+    let $applyForm = select('.appy_form_section');
+    let $applyPosition = this.getAttribute('data-apply');
+    
+    $hrDetail.classList.add('hide');
+    $applyForm.classList.add('show');
+    select('#position').setAttribute('value', $applyPosition);
+  })
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -254,4 +263,6 @@
     });
   });
 
+  /* Apply from actions */
+  
 })()
